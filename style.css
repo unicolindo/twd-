@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.quiz-container {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  border: 1px solid #333;
+}
+
+h1 {
+  text-align: center;
+  color: #e63946;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+#question-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 2px solid #444;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover:not([disabled]) {
+  background-color: #383838;
+  border-color: #777;
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+}
+
+.option-btn.correct {
+  background-color: #1b5e20 !important;
+  border-color: #4caf50 !important;
+  color: #ffffff;
+}
+
+.option-btn.wrong {
+  background-color: #b71c1c !important;
+  border-color: #f44336 !important;
+  color: #ffffff;
+}
+
+.feedback {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  min-height: 28px;
+}
+
+.feedback.correct {
+  color: #4caf50;
+}
+
+.feedback.wrong {
+  color: #ef5350;
+}
+
+.btn {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #c02633;
+}
+
+#result-box {
+  text-align: center;
+}
+
+#result-box h2 {
+  margin-bottom: 15px;
+  color: #4caf50;
+}
+
+#result-box p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
